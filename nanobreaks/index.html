@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nanobreaks</title>
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0; /* Ensures no default margins */
+    padding: 0; /* Ensures no default padding */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Blurred background image */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69') no-repeat center center/cover;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    background-color: #002244; /* Dark blue background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 20px; /* Add some padding for smaller screens */
+}
+
+.playlist-logo {
+    width: 80%; /* Use percentage for responsive design */
+    max-width: 250px; /* Max width for larger screens */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.playlist-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.listen-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ED760;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    max-width: 90%; /* Ensure button does not exceed screen width */
+}
+
+.spotify-logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .playlist-info {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69" alt="nanobreaks playlist" class="playlist-logo">
+            <h1>nanobreaks</h1>
+            <div class="playlist-info">
+                <a href="https://open.spotify.com/playlist/0Xd0N1jdmpMfUdGosUp4Ig?si=8f8db397d5d74008" class="listen-btn">
+                    Listen on Spotify
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo" class="spotify-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie consent banner -->
+    <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.8); color: white; padding: 15px; text-align: center; display: none;">
+        This website uses cookies to enhance the user experience. 
+        <br>
+        <br>
+        <button id="acceptCookies" style="background-color: #1ED760; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+            Accept
+        </button>
+        <a href="/privacy-policy" style="color: #1ED760; text-decoration: underline; margin-left: 10px;">Learn more</a>
+    </div>
+    
+    <script>
+        // Check if cookies are already accepted
+        if (!localStorage.getItem('cookiesAccepted')) {
+            document.getElementById('cookieConsent').style.display = 'block';
+        }
+    
+        // Handle acceptance of cookies
+        document.getElementById('acceptCookies').onclick = function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieConsent').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
