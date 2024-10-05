@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nanobreaks</title>
 
-    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
 
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="nanobreaks playlist" />
-    <meta property="og:description" content="Explore smooth liquid drum & bass, ambient soundscapes, and deep underground vibes. Listen on Spotify." />
-    <meta property="og:image" content="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69" />
+    <meta property="og:description"
+        content="Explore smooth liquid drum & bass, ambient soundscapes, and deep underground vibes. Listen on Spotify." />
+    <meta property="og:image"
+        content="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69" />
     <meta property="og:url" content="https://syglit.xyz/nanobreaks" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="nanobreaks playlist" />
-    <meta name="twitter:description" content="Explore smooth liquid drum & bass, ambient soundscapes, and deep underground vibes. Listen on Spotify." />
-    <meta name="twitter:image" content="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69" />
+    <meta name="twitter:description"
+        content="Explore smooth liquid drum & bass, ambient soundscapes, and deep underground vibes. Listen on Spotify." />
+    <meta name="twitter:image"
+        content="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69" />
 
-  <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '8080830015379450');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=8080830015379450&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=8080830015379450&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9S298Q3BG"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-B9S298Q3BG');
     </script>
 
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
-            margin: 0; /* Ensures no default margins */
-            padding: 0; /* Ensures no default padding */
+            margin: 0;
+            /* Ensures no default margins */
+            padding: 0;
+            /* Ensures no default padding */
         }
 
         * {
@@ -89,7 +110,8 @@
 
         body {
             font-family: "Lexend", sans-serif;
-            background-color: #002244; /* Dark blue background */
+            background-color: #002244;
+            /* Dark blue background */
             color: white;
             display: flex;
             justify-content: center;
@@ -100,12 +122,15 @@
 
         .container {
             text-align: center;
-            padding: 20px; /* Add some padding for smaller screens */
+            padding: 20px;
+            /* Add some padding for smaller screens */
         }
 
         .playlist-logo {
-            width: 80%; /* Use percentage for responsive design */
-            max-width: 250px; /* Max width for larger screens */
+            width: 80%;
+            /* Use percentage for responsive design */
+            max-width: 250px;
+            /* Max width for larger screens */
             height: auto;
             margin-bottom: 20px;
         }
@@ -132,7 +157,8 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            max-width: 90%; /* Ensure button does not exceed screen width */
+            max-width: 90%;
+            /* Ensure button does not exceed screen width */
         }
 
         .spotify-logo {
@@ -145,51 +171,60 @@
         /* Media query for mobile devices */
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.5rem; /* Smaller font size for mobile */
+                font-size: 1.5rem;
+                /* Smaller font size for mobile */
             }
 
             .playlist-info {
-                flex-direction: column; /* Stack items on smaller screens */
+                flex-direction: column;
+                /* Stack items on smaller screens */
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="content">
-            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69" alt="nanobreaks playlist" class="playlist-logo">
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da844d21cd7c3d918681dce90d69"
+                alt="nanobreaks playlist" class="playlist-logo">
             <h1>nanobreaks</h1>
             <div class="playlist-info">
-                <a href="https://open.spotify.com/playlist/0Xd0N1jdmpMfUdGosUp4Ig?si=8f8db397d5d74008" class="listen-btn">
+                <a href="https://open.spotify.com/playlist/0Xd0N1jdmpMfUdGosUp4Ig?si=8f8db397d5d74008"
+                    class="listen-btn">
                     Listen on Spotify
-                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo" class="spotify-logo">
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png"
+                        alt="Spotify Logo" class="spotify-logo">
                 </a>
             </div>
         </div>
     </div>
 
     <!-- Cookie consent banner -->
-    <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.8); color: white; padding: 15px; text-align: center; display: none;">
-        This website uses cookies to enhance the user experience. 
+    <div id="cookieConsent"
+        style="position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.8); color: white; padding: 15px; text-align: center; display: none;">
+        This website uses cookies to enhance the user experience.
         <br>
         <br>
-        <button id="acceptCookies" style="background-color: #1ED760; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+        <button id="acceptCookies"
+            style="background-color: #1ED760; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
             Accept
         </button>
         <a href="/policy.html" style="color: #1ED760; text-decoration: underline; margin-left: 10px;">Learn more</a>
     </div>
-    
+
     <script>
         // Check if cookies are already accepted
         if (!localStorage.getItem('cookiesAccepted')) {
             document.getElementById('cookieConsent').style.display = 'block';
         }
-    
+
         // Handle acceptance of cookies
-        document.getElementById('acceptCookies').onclick = function() {
+        document.getElementById('acceptCookies').onclick = function () {
             localStorage.setItem('cookiesAccepted', 'true');
             document.getElementById('cookieConsent').style.display = 'none';
         };
     </script>
 </body>
+
 </html>
